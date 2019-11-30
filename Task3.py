@@ -11,38 +11,41 @@
 # drive!”. Если же бензина не хватит, то распечатайте “Need more fuel, please, fill
 # more!”
 
+length = int(input('enter distance: '))
 class Car:
-    def __init__(self, make, model, year, fuel):
+    def __init__(self, make, model, year):
         self.make = make
         self.model = model
         self.year = year
-        self.fuel = fuel
         self.odometr = 0
         self.fuel = 70
 
+
+    def desc(self):
+        return ('{} {} {}'.format(self.make,self.model,self.year))
+
+# принимает расстояние в км
     def drive(self):
-        if self.odometr = 0
-            self.drive = True
+        return self.odometer 
+           
+#  добавляет километры к значению одометра          
+    def __substract_fuel(self):
+        km = self.odometer + length
+        print('Distance: {}km'. format(km))
 
 
-        drive.distance km 1 litr per 10 km
-        
-        
-
-        "Let's drive!"
-        "Need more fuel, please, fill more"
-
-
-def fly(self):
-        if self.odometr > 0:
-            self.is_flying = True
-            print('')
+    def __add_distance(self):
+        benz = length / 10
+        benz1 = self.fuel - benz
+        if benz1 < 0:
+            print ('Need more fuel, please, fill more')
         else:
-            self.odometr = 0
-            self.is_flying = False
-            print('')
+            print('you have: ', benz1)
+      
+        
+auto = Car('Lexus', 'rx360', 2015)
+print(auto.desc())
+auto.drive()
+auto._Car__subtract_fuel()
+auto._Car__add_distance()
 
-
-__add_distance 
-
-__subtract_fuel
